@@ -1,4 +1,4 @@
 language: c++
 compiler: clang
-script: "cmake ."
+script: "cmake . && make"
 after_script: "ctest -VV ."
