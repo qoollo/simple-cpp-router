@@ -1,7 +1,7 @@
 # Simple C++ URI routing library
 
 ## Requirements
-C++11 compiler with <regex> support
+C++11 compiler with regex support
 
 ## Example usage
 
