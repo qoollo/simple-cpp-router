@@ -19,6 +19,8 @@ elseif("${CMAKE_CXX_COMPILER_ID}" STREQUAL "MSVC")
 	set(MSVC true)
 endif()
 
+enable_testing()
+
 add_subdirectory(src)
 add_subdirectory(external/googletest)
 add_subdirectory(tests)
