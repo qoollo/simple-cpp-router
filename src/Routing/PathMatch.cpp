@@ -22,4 +22,8 @@ std::string PathMatch::pathTemplate() const {
     return _pathTemplate.templ();
 }
 
+std::string PathMatch::operator[](std::string const &name) const {
+    return getVar(name);
+}
+
 }

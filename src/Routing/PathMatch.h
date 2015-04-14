@@ -32,6 +32,16 @@ public:
      */
     std::string getVar(std::string const &name) const;
 
+    /**
+     * @brief Get dynamic variable
+     * @param variable name
+     * @returns variable
+     * @throws NoSuchElementException if path template doesn't contain variable with given name
+     * @details example: for path template [/path/to/:var] and actual
+     * path [/path/to/123] result will be '123'
+     */
+    std::string operator[] (std::string const &name) const;
+
 
 protected:
     PathMatch(std::string path, Details::PathTemplate const &tpl);
