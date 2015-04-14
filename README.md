@@ -17,7 +17,7 @@ C++11 compiler with regex support
     PathMatch match = router.matchPath("/path/to/dynvar_1/and/dynvar_2");
     
     assert(match.pathTemplate() == "/path/to/:one_var/and/:another_var");
-    assert(std::string("dynvar_1") == match.getVar("one_var"));
-    assert(std::string("dynvar_2") == match.getVar("another_var"));
+    assert(std::string("dynvar_1") == match["one_var"]);
+    assert(std::string("dynvar_2") == match["another_var"]);
     
 ```
